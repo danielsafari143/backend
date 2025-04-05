@@ -6,8 +6,8 @@
   "scripts": {
     "test": "test",
     "dev": "nodemon --exec ts-node src/index.ts",
-    "build": "tsc",
     "start": "node dist/index.js",
+    "build": "tsc --outDir dist",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
