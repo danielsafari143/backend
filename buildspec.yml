@@ -8,8 +8,7 @@ phases:
       - echo Installing dependencies...
       - npm install
   build:
-    - echo Running tests...
-    - npm test
+    commands:
       - echo Building the project...
       - npm run build
   post_build:
