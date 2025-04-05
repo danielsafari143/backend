@@ -11,9 +11,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World!");
+  res.json({data : {text : "hello wolrd "}}).status(200);
 });
 
 app.listen(3000, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+export default app;
